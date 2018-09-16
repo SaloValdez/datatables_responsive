@@ -1,0 +1,133 @@
+body{
+background-color: yellow;
+margin: 0px;
+}
+
+.contenedor_datatable{
+background-color: red;
+margin: 0px;
+width: 95%;
+margin:auto;
+margin-top: 5px;
+padding: 5px;
+border-radius: 2px;
+
+}
+/*TODO: INICIO ==========CABECERA =========  */
+.contenedor_datatable .dataTables_length{
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+
+}
+
+.contenedor_datatable .dataTables_length select{
+  font-size: 1rem;
+}
+
+.contenedor_datatable .dataTables_filter{
+padding-top: 5px;
+  padding-bottom: 5px;
+}
+.contenedor_datatable .dataTables_filter input{
+  font-size: 1rem;
+}
+
+
+/*TODO: FIN ============  CABECERA =========  */
+
+.dataTables_wrapper {
+font-family:sans-serif;
+font-weight: bold;
+}
+.datatable{
+  font-family:sans-serif;
+  font-weight: normal;
+  color: #000;
+}
+.datatable thead tr th:nth-child(1){
+  /* background-color: violet; */
+  padding-right:10px;
+  padding-left:0px;
+}
+.datatable thead tr th:nth-child(2){
+
+  padding-right:10px;
+  padding-left:0px;
+}
+.datatable thead tr th:nth-child(2)::before{
+content: "\f044";
+    /* background-image: url(./images/sort_both.png); */
+}
+.datatable thead tr th{
+  padding-top: 4px;
+padding-bottom: 4px;
+}
+.datatable thead{
+background-color: turquoise;
+}
+.datatable tbody  tr td .btnAccion{
+background-color: teal;
+color: #fff;
+border-radius: 50% 50%;
+padding: 4px;
+text-decoration: none;
+
+
+}
+.dataTable tbody tr.odd:hover,tr.even:hover{
+  background-color: brown !important;
+}
+
+.dataTable tbody  td.sorting_1:hover{
+    background-color: royalblue !important;
+}
+
+.dataTable tbody tr .child:hover{
+background-color: springgreen;
+}
+
+.datatable tbody  tr td .btnAccion .icon{
+  padding-top: -20px;
+}
+
+
+/*TODO: =========== paginacion */
+.dataTables_paginate{
+ margin-bottom:4px;
+}
+.dataTables_paginate .paginate_button {
+/* background-color: yellow; */
+background-color: violet;
+}
+
+.dataTables_paginate .paginate_button.current{
+background: chartreuse !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    background: peru;
+}
+
+
+/* TODO   inicio  VENTANA MODAL =================== */
+
+
+.modal{
+ width: 100%;
+height: 100%;
+color: #fff;
+position: fixed;
+background-image: url(./images/fondoModal.png);
+top: 0;
+left: 0;
+display: none;
+}
+
+.btnCerrarModal{
+    background-color: violet;
+    border-radius: 4px;
+    padding: 3px;
+    margin-left: 15px;
+text-decoration: none;
+}
